@@ -19,7 +19,7 @@ of articles, headers, footers, etc
     width: $frontHeaderNavWidth;
     overflow: auto;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
    
     li {
@@ -43,7 +43,7 @@ of articles, headers, footers, etc
         text-decoration: none;
         display: block;
         color: $frontHeaderColor;        
-        padding: 20px 55px;
+        padding: 20px 30px;
         line-height: 45px;
         border-left: 1px solid lighten($frontHeaderBg, 5%);
         box-shadow:inset 0px 0px 2px darken($frontHeaderBg, 5%);
@@ -76,7 +76,7 @@ of articles, headers, footers, etc
       text-align: center;
       
       .nav.nav-tabs {
-        width: 290px;
+        width: 215px;
         margin: 0 auto;
       
         li {
