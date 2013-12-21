@@ -1,0 +1,62 @@
+/***********************
+Plugins are for things 
+that you think you might want
+to reuse in different parts
+of the application.
+
+There can be different types
+of articles, headers, footers, etc
+************************/
+
+
+.article-main {  
+
+  .article-title {
+    margin: 20px 0;
+    font-weight: 600;
+  }
+
+  #myCarousel {
+    width: 681px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .carousel-caption {
+      background: rgba(#333, 0.50);
+      h4 { 
+        color: #E5EBEE; 
+      }
+    }
+    
+  
+  } // END myCarousel
+
+  .read-more-header {
+    clear: both;
+  }
+  .read-more-paragraph {
+    margin-top: 20px;
+  }
+
+   #video {
+    width: 853px;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  #games {
+    width: 853px;
+    margin: 0 auto;
+  }
+  
+} // END p-article-main

@@ -7,8 +7,47 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  
+  <div class="front-header">
+    <div class="container">
+      <ul class="front-header-nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Destinations</a>
+        </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li class="logo-image">
+          <%= image_tag "logo.png" %>          
+        </li>
+        <li>
+          <a href="#">Hotels</a>
+        </li>
+        <li>
+          <a href="#">Flights</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="front-sub-header"> 
+      <div class="container">
+        <ul class="nav nav-tabs ">
+          <li class="active"><a href="#images" data-toggle="tab">Images</a></li>
+          <li><a href="#video" data-toggle="tab">Video</a></li>
+          <li><a href="#games" data-toggle="tab">Games</a></li>         
+        </ul>  
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>

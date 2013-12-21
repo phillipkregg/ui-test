@@ -1,0 +1,19 @@
+/***********************
+Sometimes it's nice to
+override the defaults
+************************/
+
+
+h1, h2, h3, h4, h5 {
+  color: #124385;
+}
+
+.btn {
+  &.btn-primary {
+    background: #124385;
+  }
+}
+
+.well {
+  background: #E5EBEE;
+}

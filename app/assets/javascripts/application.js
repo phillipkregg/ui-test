@@ -13,4 +13,24 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
+
+
+$(document).ready(function() {
+  
+  var $readMoreParagraph = $('.read-more-paragraph');
+  var $readMoreButton = $('#read-more-button');
+  
+  $readMoreParagraph.hide();  
+  
+   $readMoreButton.click(function () {
+      $(this).text(function(i, text){
+          return text === "Read More" ? "Hide Info" : "Read More";
+      });
+      $readMoreParagraph.slideToggle('fast');
+   });
+  
+  
+});
+
